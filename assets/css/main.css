@@ -1,0 +1,369 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    width: 100%;
+    height: 60px;
+}
+
+.header__navbar{
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar-logo{
+    width: 60px;
+    height: 50px;
+}
+
+.header__navbar-logo-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header__navbar-list{
+    list-style: none;
+    display: flex;
+}
+
+.header__navbar-list{
+    padding-left: 10px;
+}
+
+.header__navbar-item{
+    position: relative;
+    margin: 0 12px;
+}
+
+.header__navbar-item:hover .header__navbar-item-link{
+    color: var(--white-color);
+    background-color: black;
+}
+
+.header__navbar-item:hover .header__sub-nav-list{
+    display: block;
+}
+
+.header__navbar-item-link{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 20px;
+    height: 36px;
+}
+
+.header__sub-nav-list{
+    display: none;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    min-width: 150px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    z-index: 3;
+}
+
+.header__sub-nav-list::before{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 40px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+
+.header__sub-nav-item{
+    list-style: none;
+    padding: 8px 12px;
+}
+
+.header__sub-nav-item:hover .header__sub-nav-item-link{
+    color: var(--black-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.header__sub-nav-item-link{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.header__navbar-item--separate::before{
+    content: "";
+    position: absolute;
+    right: -12px;
+    display: block;
+    height: 20px;
+    border-right: 2px solid var(--black-color);
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner__img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#container{
+    padding-top: 20px;
+}
+
+.player__row{
+    margin-top: 38px;
+}
+
+.player__heading{
+    font-size: 2.6rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.player__column{
+    display: block;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+.player__column:hover .player__column-img{
+    transform: scale(1.1);
+}
+
+.player__column-img{
+    width: 100%;
+    transition: all ease-out 0.5s;
+}
+
+.player__column-info{
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    padding: 20px 12px 14px;
+}
+
+.player__column-number{
+    margin-right: 20px;
+    font-weight: 800;
+    font-size: 2.8rem;
+    position: relative;
+    top: -1px;
+}
+
+.player__column-name{
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+
+#coach{
+    margin-top: 60px;
+    border-top: 2px solid var(--black-color);
+}
+
+.coach__detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.coach__info-heading{
+    font-size: 4rem;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--black-color);
+}
+
+.coach__info-sub-heading{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.coach__info-describe{
+    position: relative;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 20px 14px;
+}
+
+#calendar{
+    margin-top: 40px;
+    height: 600px;
+    text-align: center;
+    background-image: url(/assets/img/stadium_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.calendar__heading{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--white-color);
+    padding: 40px 0;
+    text-transform: uppercase;
+}
+
+.calendar__sub-heading{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.calendar__match{
+    width: 670px;
+    height: 280px;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    background-color: #c4bebe;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px #ccc;
+}
+
+.calendar__team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    border-right: 1px solid #999;
+}
+
+.calendar__team-img, .calendar__tournaments-img{
+    width: 65px;
+    height: 81px;
+    object-fit: contain;
+    margin: 0 20px;
+}
+
+.calendar__team-img:first-child{
+    position: relative;
+    top: -8px;
+}
+
+.calendar__info{
+    flex: 1;
+}
+
+.calendar__info-hour{
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.calendar__info--separate::before{
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -8px;
+    display: block;
+    height: 20px;
+    border-right: 1px solid var(--black-color);
+}
+
+.calendar__info-day{
+    font-size: 2.5rem;
+    margin-left: 12px;
+}
+
+.calendar__info-stadium-info{
+    display: block;
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+#buy-ticket{
+    padding: 60px 0;
+    width: 100%;
+}
+
+.buy-ticket__heading{
+    font-size: 4rem;
+    text-align: center;
+    padding: 0 0 30px;
+    border-bottom: 1px solid #888888;
+    margin-bottom: 60px;
+}
+
+.buy-ticket__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-ticket__input{
+    width: 600px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 20px 12px;
+    color: #888888;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.buy-ticket__price{
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.buy-ticket__btn{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.buy-ticket__btn:hover{
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+#stadium{
+    margin-top: 60px;
+}
+
+#footer{
+    width: 100%;
+    height: 260px;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+    padding-top: 60px;
+    background-color: #f8f8f8;
+}
+
+.footer__heading{
+    display: inline-block;
+    letter-spacing: 4px;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #888888;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.footer__social i{
+    font-size: 3rem;
+    color: #888888;
+    padding: 80px 20px 0;
+}
