@@ -1,0 +1,35 @@
+/* PC */
+@media (min-width: 1024px){
+
+}
+
+/* Table */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header__navbar-item-link{
+        font-size: 1.2rem;
+    }
+    .grid{
+        padding: 0 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    .header{
+        display: block;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .header__navbar-logo{
+        display: none;
+    }
+
+    .header__navbar-list{
+        flex-direction: column;
+    }
+
+    .fa-solid.fa-chevron-down, .header__navbar-item--separate{
+        display: none;
+    }
+}

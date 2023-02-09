@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -105,28 +109,24 @@
 }
 
 .banner{
-    width: 100%;
-}
-
-.banner__img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    padding-top: 50%;
+    background: url('/assets/img/banner.png') top center / cover no-repeat;
 }
 
 #container{
     padding-top: 20px;
 }
 
-.player__row{
-    margin-top: 38px;
-}
-
 .player__heading{
     font-size: 2.6rem;
     font-weight: 600;
+    margin-top: 50px;
     padding-bottom: 20px;
     text-transform: uppercase;
+}
+
+.player__heading:first-child{
+    margin-top: 0;
 }
 
 .player__column{
@@ -204,7 +204,7 @@
     margin-top: 40px;
     height: 600px;
     text-align: center;
-    background-image: url(/realM_page/assets/img/stadium_banner.jpg);
+    background-image: url(/assets/img/stadium_banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -18,22 +18,6 @@ html{
     font-family: 'Dosis', sans-serif;
 }
 
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -12px;
-}
-
-.grid__column{
-    width: 20%;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 14px;
+.mg-bottom-20{
+    margin-bottom: 20px;
 }
