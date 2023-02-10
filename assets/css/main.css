@@ -110,7 +110,7 @@ body{
 
 .banner{
     padding-top: 50%;
-    background: url('/assets/img/banner.png') top center / cover no-repeat;
+    background: url('../img/banner.png') top center / cover no-repeat;
 }
 
 #container{
